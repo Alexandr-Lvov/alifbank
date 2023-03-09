@@ -8,6 +8,17 @@ type Category string
 
 type Currency string
 
+// Status представляет собой статус платежа
+type Status string
+
+// Предопределенные статусы платежей
+const(
+	StatusOk Status = "OK"
+	StatusFail Status = "FAIL"
+	StatusInProgress Status = "INPROGRESS000"
+ 
+)
+
 const (
 	TJS Currency = "TJS"
 	RUB Currency = "RUB"
